@@ -1,0 +1,70 @@
+body{
+  margin:0;
+  padding:0;
+  background:url("https://images.wallpaperscraft.com/image/turn_road_mountains_trees_marking_118733_2048x1152.jpg") ;
+  background-size: cover;
+}
+.signup{
+  width:400px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  color:#fff;
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.header p{
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  color:#0E99F6;
+}
+.header h5{
+  padding:0;
+  top:-50px;
+  left: calc(50% - 50px);
+  font-family: serif;
+  text-align: center;
+  color:#fff;
+}
+.signup p{
+  padding: 0;
+  font-weight: bold;
+}
+.signup input{
+  width: 100%;
+  border-bottom: 20px;
+}
+.signup input[type="text"], input[type="password"]{
+  border: none;
+  border-radius: 3px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline:none;
+  color: #fff;
+  height: 20px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.footer a{
+  color:#fff;
+  font-size: 30px;
+  padding: 20px 30px;
+  background:rgba(255,255,255, 0.5);
+  border: 1px solid lightblue;
+  text-decoration: none;
+}
+.signup button{
+  width:100%;
+  border: none;
+  border-radius:50px;
+  outline: none;
+  height: 40px;
+  background:#0E99F6;
+}
+.signup button:hover{
+  background-color:#67B8F6;
+}
