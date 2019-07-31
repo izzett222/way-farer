@@ -2,35 +2,47 @@
 <html>
 <head>
 	<title>sign-in</title>
-<<<<<<< HEAD
 	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="UI/signin.css">
-=======
 	<link type="text/css" rel="stylesheet" href="signin.css">
->>>>>>> origin
 </head>
 <body>
 	<div class="login">
 		<h1>Way Farer</h1>
 		<br></br>
-		<form>
+		<form >
+			
 			<p>Username</p>
-			<input type="text" name="username" placeholder="Enter Username">
+			<input type="text" name="username" placeholder="Enter Username" >
 			<P>Password</p>
-			<input type="password" name="password" placeholder="Enter Password">
+			<input type="password" name="password" placeholder="Enter Password" >
 			<a href="forgot.html">Forgot password?</a>
 			<br></br>
 						<br></br>
-<<<<<<< HEAD
-			<a href="UI/userhome.html"><input type="submit" name="submit" value="Login"></a>
+
+			<input type="submit" name="submit" value="Login" onclick="myf(this.form)">
 			<br></br>
-			<div class="reg"><u><a href="UI/sign-up.html">Register</a></u></div>
-=======
-			<input type="submit" name="submit" value="Login">
-			<br></br>
-			<div class="reg"><u><a href="sign-up.html">Register</a></u></div>
->>>>>>> origin
+			<div class="reg"><u><a href="sign-up.html">Register</a></u>
+			</div>
+			
 		</form>
 	</div>
+	<script>
+	function myf(form) {
+	// body...
+	// const name = getElementById('name').value;
+	// const pass = getElementById('pass').value;
+	if(form.username.value == "kabundege" && form.password.value == "123"){
+		window.open('./UI/adminHome.html');
+	}
+	if(form.username.value == "guest" && form.password.value == "123"){
+		window.open('./UI/userhome.html')
+	}
+
+	else{
+		alert('access denied')
+	}
+	}
+	</script>
 <body>
 </html>
