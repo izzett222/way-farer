@@ -82,6 +82,9 @@ body{
   visibility: hidden;
   z-index: -111;
 }
+form p{
+  font-size: 18px;
+}
 @media screen and (min-width:801px) {
 
   .grid {
