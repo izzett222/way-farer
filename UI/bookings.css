@@ -169,6 +169,13 @@ form p{
     border: none;
     float: right;
     margin-right: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+  }
+  .grid input[type="submit"]:hover{
+    background:#817bad ;
   }
   .Container_2{
     width: 90%;
@@ -243,11 +250,11 @@ form p{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     background:#fff;
-    margin-left: 5%;
+    margin-left: 1%;
     margin-top: 30px;
     height: 450px;
     border: 2px solid lightgray;
-    width: 90%;
+    width: 97%;
     border-radius: 10px;
     box-shadow : 3px  #fff;
     overflow-y: auto;
@@ -326,6 +333,13 @@ form p{
     float: right;
     margin-right: 20px;
     margin-top: -10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+  }
+  .grid input[type="submit"]{
+    background: #817bad;
   }
   .ftr{
     padding-top: 10px;
@@ -614,4 +628,11 @@ form p{
     float: right;
     margin-right: 20px;
     margin-top: -10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+  }
+  .grid input[type="submit"]:hover{
+    background:#817bad;
   }
