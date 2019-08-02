@@ -1,0 +1,460 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  background: lightgray;
+}
+.header{
+  height: 100px;
+  background: #486F91;
+  padding: 0 20px;
+  color:#fff;
+}
+.logo{
+  line-height: 100px;
+  float: left;
+  margin-top: 10px;
+  text-transform:Uppercase;
+}
+.menu{
+  float: right;
+  line-height: 100px;
+}
+.img2 {
+  float: right;
+  line-height: 100px;
+  padding: 20px 10px 10px 10px;
+}
+.img2 #first{
+  width:20px;
+  height: 20px;
+  padding: 25px 10px 10px 0px;
+}
+.img2 ul{
+  list-style: none;
+}
+.img2 ul li{
+  background-color: rgba(0,0,0,0.2);
+  text-align: center;
+  padding:0px;
+  line-height: 20px;
+  border-radius: 40px;
+}
+.img2 ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#fff;
+  display: block;
+}
+.img2 ul li a:hover{
+  background: rgba(255, 255, 255, 0.5);
+}
+.img2 ul li ul li{
+  padding: 10px;
+  display: none;
+}
+.img2 ul li:hover ul li{
+  display:block;
+}
+.menu a{
+  color:#fff;
+  text-transform: Uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.show-menu,.hide-menu{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.menu a:hover,.show-menu:hover,.hide-menu:hover{
+  color: #3498db;
+}
+.show-menu{
+  float: right;
+}
+.show-menu i{
+  line-height: 100px;
+}
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -111;
+}
+@media screen and (min-width:801px) {
+  .ftr{
+    padding-top: 10px;
+    background-color: #1173c7;
+    width:100%;
+    height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .city {
+    width:100%;
+    height:20vh;
+    background: url("city.png");
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    background:#fff;
+    margin-left: 20%;
+    margin-top: 30px;
+    height: 450px;
+    border: 2px solid lightgray;
+    width: 70%;
+    border-radius: 3px;
+    box-shadow : 3px  #fff;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+  .grid div{
+    margin: 5px 10px;
+    width: 95%;
+    height: 40vh;
+    background-color: bisque;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px 3px rgb(206, 205, 205);
+  }
+  .map1{
+    background: url('./car.jpg');
+    background-size: cover;
+    width:100%;
+    height:50vh;
+    padding: 0;
+  }
+  .map {
+    padding: 0px;
+    margin: 0px;
+    padding-top:-90%;
+    display: inline-block;
+    align-items: center;
+    margin-left:43%;
+  }
+  .map #org,#dst,#user{
+      margin-top: 20%;
+      padding: 10px 20px;
+      background: #486F91;
+      color:white;
+      font-weight: bold;
+      
+  }
+  .map #dst{
+    background: #3adf5e
+  }
+  .map #user{
+    background: #aaaaaa;
+  }
+  div .org,.dst,.user{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #486F91;
+    color:white;
+    font-weight: bold;
+  }
+  div .dst{
+    background: #3adf5e;
+  }
+  div .user{
+    background: #aaaaaa;
+  }
+  div form{
+    margin-top:10%;
+    height: 90%; 
+    margin-left: 10px
+    
+  }
+  .grid input[type="datetime-local"]{
+    margin-top: 30px;
+  }
+  .grid input[type="submit"]{
+    padding:10px;
+    background: #3adf5e;
+    border-radius: 2px;
+    border: none;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color:white
+  }
+  .grid input[type="submit"]:hover{
+    background: #91d39f
+  }
+}
+@media screen and (max-width:500px) {
+  
+  .ftr{
+    padding-top: 10px;
+    background-color: #1173c7;
+    width:100%;
+    height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .city {
+    margin:0;
+    width:100%;
+    height:20vh;
+    background: url("city.png");
+    background-size: cover;
+  }
+  .show-menu,.hide-menu{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 10px 0;
+    line-height: normal;
+    transition: 0.5s;
+  }
+  .menu a{
+    display: block;
+    padding:10px;
+  }
+  #chk:checked ~.menu {
+    right:0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    background:#fff;
+    margin-left: 5%;
+    margin-top: 30px;
+    height: 450px;
+    border: 2px solid lightgray;
+    width: 97%;
+    border-radius: 10px;
+    box-shadow : 3px  #fff;
+    overflow-y: auto;
+    overflow-x: auto
+  }
+  .grid div{
+    margin: 5px 10px;
+    width: 95%;
+    height: 40vh;
+    background-color: bisque;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px 3px rgb(206, 205, 205);
+  }
+  .map {
+    padding: 0px;
+    margin: 0px;
+    margin-top:-20px;
+    display: inline-block;
+    align-items: center;
+    margin-left: 30%
+  }
+  .map1{
+    background: url('./car.jpg');
+    background-size: cover;
+    width:100%;
+    height:20vh;
+    padding: 0;
+  }
+  .map #org,#dst{
+      margin-top: -20%;
+      padding: 10px 20px;
+      background: #486F91;
+      color:white;
+      font-weight: bold;
+      
+  }
+  .map #dst{
+    background: #3adf5e
+  }
+  .map #user{
+    background: #aaaaaa;
+  }
+  div .org,.dst{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #486F91;
+    color:white;
+    font-weight: bold;
+    width: 50px
+  }
+  div .dst{
+    background: #3adf5e;
+    float: right;
+    margin-top: -10px;
+    margin-right: 4px;
+  }
+  div .user{
+    background: #aaaaaa;
+  }
+  div form{
+    margin-top:10%;
+    height: 90%; 
+    margin-left: 10px
+    
+  }
+  .grid input[type="datetime-local"]{
+    margin-top: 30px;
+    width: 200px;
+  }
+  .grid input[type="submit"]{
+    padding:10px;
+    background:#3adf5e;
+    border-radius: 2px;
+    border: none;
+    float: right;
+    margin-right: 20px;
+    margin-top: -10px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color:white
+  }
+  .grid input[type="submit"]:hover{
+    background: #91d39f
+  }
+}
+@media screen and (min-width:501px) and (max-width:800px) {
+  
+  .show-menu,.hide-menu{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 10px 0;
+    line-height: normal;
+    transition: 0.5s;
+  }
+  .menu a{
+    display: block;
+    padding:10px;
+  }
+  #chk:checked ~.menu {
+    right:0;
+  }
+  .ftr{
+    padding-top: 10px;
+    background-color: #1173c7;
+    width:100%;
+    height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .city {
+    margin:0;
+    width:100%;
+    height:24vh;
+    background: url("city.png");
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    background:#fff;
+    margin-left: 5%;
+    margin-top: 30px;
+    height: 450px;
+    border: 2px solid lightgray;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow : 3px  #fff;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  .grid div{
+    margin: 5px 10px;
+    width: 100%;
+    height: 40vh;
+    background-color: bisque;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px 3px rgb(206, 205, 205);
+  }
+  .map1{
+    background: url('./car.jpg');
+    background-size: cover;
+    width:100%;
+    height:200px;
+    padding: 0;
+  }
+  .map {
+    padding: 0px;
+    margin: 0px;
+    margin-top:-20px;
+    display: inline-block;
+    margin-left:40%;
+  }
+  .map #org,#dst,#user{
+      margin-top: 20%;
+      padding: 10px 20px;
+      background: #486F91;
+      color:white;
+      font-weight: bold;
+      
+  }
+  .map #dst{
+    background: #3adf5e
+  }
+  .map #user{
+    background: #aaaaaa;
+  }
+  div .org,.dst,.user{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #486F91;
+    color:white;
+    font-weight: bold;
+  }
+  div .dst{
+    background: #3adf5e;
+    float: right;
+    margin-top: -12px;
+    margin-right: 4px;
+  }
+  div .user{
+    background: #aaaaaa;
+  }
+  div form{
+    margin-top:10%;
+    height: 90%; 
+    margin-left: 10px
+    
+  }
+  .grid input[type="datetime-local"]{
+    margin-top: 30px;
+  }
+  .grid input[type="submit"]{
+    padding:10px;
+    background: #3adf5e;
+    border-radius: 2px;
+    border: none;
+    float: right;
+    margin-right: 20px;
+    margin-top: -10px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color:white
+  }
+  .grid input[type="submit"]:hover{
+    background: #91d39f
+  }
+}
