@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="../css/userhome.css">
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="logo">wayfarer</h2>
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu">
+        <i class="fas fa-ellipsis-h"></i>
+      </label>
+      <div class="img2">
+        <ul>
+          <li><img src="../images/user.png">
+          <img src="https://img.icons8.com/ios/50/000000/expand-arrow--v2.png" id="first">
+          <ul>
+            <li><a href="../../index.html">Logout</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+      <ul class="menu">
+        <a href="#">Home</a>
+        <a href="../html/usertrips.html">Trips</a>
+        <a href="../html/bookings.html">Bookings</a>
+        <label for="chk" class="hide-menu">
+          <i class="fas fa-times"></i>
+        </label>
+      </ul>
+        </div>
+    <div class="img1">
+    </div>
+     <div class="container">
+        <h5>Search a Trip</h5>
+        <div class="info">
+          <div class="slt-from">
+            <p><b>From</b></p>
+            <img src="https://img.icons8.com/ios/50/000000/bus.png"width="20" height="25">
+            <select class="slt-1" name="slt-1">
+              <option selected disabled hidden>Your Origin</option>
+              <option value="1">Rubavu</option>
+              <option value="2">Huye</option>
+              <option value="3">Kigali</option>
+              <option value="4">Rwamagana</option>
+              <option value="5">Rusizi</option>
+            </select>
+          </div>
+          <div class="slt-to">
+            <p><b>To</b></p>
+            <img src="https://img.icons8.com/ios/50/000000/point-objects.png"width="20" height="25">
+            <select class="slt-2" name="slt-2">
+              <option selected disabled hidden>Your Destination</option>
+              <option value="1">Rubavu</option>
+              <option value="2">Huye</option>
+              <option value="3">Kigali</option>
+              <option value="4">Rwamagana</option>
+              <option value="5">Rusizi</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="date-D">
+          <p>Date of Departure</p>
+          <input type="date" id="date">
+        </div>
+        <br></br>
+        <input type="submit" name="submit" value="Search">
+      </div>
+    </div>
+    <div class="city">
+    </div>
+    <div class="ftr">
+      <p>© 2019 wayfarer, Inc</p>
+    </div>
+  </body>
+</html>
