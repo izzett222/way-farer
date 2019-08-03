@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Home</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <link rel="stylesheet" href="userhome.css">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/adminhome.css">
   </head>
   <body>
     <div class="header">
@@ -15,10 +16,10 @@
       </label>
       <div class="img2">
         <ul>
-          <li><img src="user.png">
+          <li><img src="../images/admin.png">
           <img src="https://img.icons8.com/ios/50/000000/expand-arrow--v2.png" id="first">
           <ul>
-            <li><a href="../index.html">Logout</a></li>
+            <li><a href="../../index.html">Logout</a></li>
             <li><a href="#">Account</a></li>
           </ul>
         </li>
@@ -26,8 +27,8 @@
       </div>
       <ul class="menu">
         <a href="#">Home</a>
-        <a href="usertrips.html">Trips</a>
-        <a href="bookings.html">Bookings</a>
+        <a href="../html/trips.html">Trips</a>
+        <a href="../html/allbookings.html">Bookings</a>
         <label for="chk" class="hide-menu">
           <i class="fas fa-times"></i>
         </label>
@@ -36,40 +37,25 @@
     <div class="img1">
     </div>
      <div class="container">
-        <h5>Search a Trip</h5>
+        <h5>Create a Trip</h5>
         <div class="info">
           <div class="slt-from">
             <p><b>From</b></p>
-            <img src="https://img.icons8.com/ios/50/000000/bus.png"width="20" height="25">
-            <select class="slt-1" name="slt-1">
-              <option selected disabled hidden>Your Origin</option>
-              <option value="1">Rubavu</option>
-              <option value="2">Huye</option>
-              <option value="3">Kigali</option>
-              <option value="4">Rwamagana</option>
-              <option value="5">Rusizi</option>
-            </select>
+            <input type="text" placeholder="origin">
           </div>
           <div class="slt-to">
             <p><b>To</b></p>
-            <img src="https://img.icons8.com/ios/50/000000/point-objects.png"width="20" height="25">
-            <select class="slt-2" name="slt-2">
-              <option selected disabled hidden>Your Destination</option>
-              <option value="1">Rubavu</option>
-              <option value="2">Huye</option>
-              <option value="3">Kigali</option>
-              <option value="4">Rwamagana</option>
-              <option value="5">Rusizi</option>
-            </select>
+            <input type="text" placeholder="destination" >
           </div>
-
         </div>
         <div class="date-D">
           <p>Date of Departure</p>
           <input type="date" id="date">
         </div>
+        <p>Number of Seats</p>
+        <input type="number" id="number" max="100" min="1">
         <br></br>
-        <input type="submit" name="submit" value="Search">
+        <input type="submit" name="submit" value="Create">
       </div>
     </div>
     <div class="city">

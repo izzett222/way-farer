@@ -98,7 +98,8 @@ body{
     left: 10%;
     transition: translate(-50%,-70%);
     position: absolute;
-    box-shadow: 1px 2px 1px lightgray;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
   }
   .ftr{
     padding-top: 10px;
@@ -112,7 +113,7 @@ body{
     margin-top: 250px;
     width:100%;
     height:20vh;
-    background: url("city.png");
+    background: url("../images/city.png");
   }
   .slt-from {
     float: left;
@@ -161,10 +162,11 @@ body{
     font-size: 15px;
     margin-top: 8px;
     margin-left:43%;
-    background: gray;
+    background: rgb(92, 92, 92);
     height: 4vh;
     border: none;
     border-radius: 3px;
+    color: white;
   }
   #number{
     margin-left: 46%;
@@ -199,7 +201,7 @@ body{
   .city {
     width:100%;
     height:20vh;
-    background: url("city.png");
+    background: url("../images/city.png");
     background-size: cover;
   }
   h5{
@@ -232,10 +234,11 @@ body{
   }
   #date,#number{
     margin-left:32%;
-    background: lightgray;
+    background: rgb(102, 102, 102);
     height: 3vh;
     border: none;
     border-radius: 3px;
+    color:white;
   }
   #number{
     margin-left: 43%;
@@ -290,7 +293,7 @@ body{
     margin-left: 10%;
     border: 1px solid lightgray;
     border-radius: 2px;
-    box-shadow: 1px 1px 1px  lightgray;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
     width:80%;
     height: 550px;
     background: rgba(255,255,255, 0.8);
@@ -308,7 +311,7 @@ body{
   .city {
     width:100%;
     height:25vh;
-    background: url("city.png");
+    background: url("../images/city.png");
     background-size: cover;
   }
   h5{
@@ -341,10 +344,11 @@ body{
   }
   #date,#number{
     margin-left:35%;
-    background: lightgray;
+    background: rgb(107, 107, 107);
     height: 3vh;
     border: none;
     border-radius: 3px;
+    color:white
   }
   #number{
     margin-left: 43%;
@@ -399,8 +403,10 @@ body{
     margin-left: 10%;
     border: 1px solid lightgray;
     border-radius: 2px;
-    box-shadow: 1px 2px 1px  lightgray;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    ;
     width:80%;
     height: 550px;
     background: rgba(255,255,255, 0.8);
   }
+}

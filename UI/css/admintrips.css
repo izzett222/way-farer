@@ -82,6 +82,9 @@ body{
   visibility: hidden;
   z-index: -111;
 }
+form p{
+  font-size: 18px;
+}
 @media screen and (min-width:801px) {
   .ftr{
     padding-top: 10px;
@@ -94,34 +97,30 @@ body{
   .city {
     width:100%;
     height:20vh;
-    background: url("city.png");
+    background: url("../images/city.png");
+    margin-top:150px;
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
-    background:#fff;
-    margin-left: 20%;
     margin-top: 30px;
     height: 450px;
-    border: 2px solid lightgray;
-    width: 70%;
+    border: none;
+    margin-left: 5%;
+    width: 90%;
     border-radius: 3px;
-    box-shadow : 3px  #fff;
-    overflow: auto;
-    overflow-x: hidden;
   }
   .grid div{
     margin: 5px 10px;
     width: 95%;
     height: 40vh;
     background-color: bisque;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 2px 5px 2px 3px rgb(206, 205, 205);
+    border: none;
+    box-shadow : 0 4px 8px 0  rgba(0, 0, 0, 0.8), 0 6px 15px 0 rgba(0, 0, 0, 0.8);
   }
   .map1{
-    background: url('./car.jpg');
+    background: url('../images/car.jpg');
     background-size: cover;
     width:100%;
     height:50vh;
@@ -141,7 +140,7 @@ body{
       background: #486F91;
       color:white;
       font-weight: bold;
-      
+
   }
   .map #dst{
     background: #3adf5e
@@ -164,32 +163,33 @@ body{
   }
   div form{
     margin-top:10%;
-    height: 90%; 
+    height: 90%;
     margin-left: 10px
-    
+
   }
   .grid input[type="datetime-local"]{
     margin-top: 30px;
   }
   .grid input[type="submit"]{
     padding:10px;
-    background: #3adf5e;
+    background: #544d85;
     border-radius: 2px;
     border: none;
     float: right;
+    color:white;
     margin-right: 20px;
+    margin-top: -20px;
     cursor: pointer;
-    font-family: cursive;
-    font-size: 18px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color:white
   }
   .grid input[type="submit"]:hover{
-    background: #91d39f
+    background: #766eac;
   }
 }
 @media screen and (max-width:500px) {
-  
+
   .ftr{
     padding-top: 10px;
     background-color: #1173c7;
@@ -199,10 +199,10 @@ body{
     font-family: sans-serif;
   }
   .city {
-    margin:0;
+    margin-top:430px;
     width:100%;
     height:20vh;
-    background: url("city.png");
+    background: url("../images/city.png");
     background-size: cover;
   }
   .show-menu,.hide-menu{
@@ -231,26 +231,21 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
-    background:#fff;
-    margin-left: 5%;
-    margin-top: 30px;
+    margin-top: 20px;
     height: 450px;
     border: 2px solid lightgray;
-    width: 97%;
+    width: 95%;
     border-radius: 10px;
-    box-shadow : 3px  #fff;
-    overflow-y: auto;
-    overflow-x: auto
+    background:rgb(206, 206, 206);
   }
   .grid div{
     margin: 5px 10px;
-    width: 95%;
-    height: 40vh;
+    width: 100%;
+    height: 90%;
     background-color: bisque;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 2px 5px 2px 3px rgb(206, 205, 205);
-  }
+    border:none;
+    box-shadow : 0 4px 8px 0  rgba(0, 0, 0, 0.8), 0 7px 15px 0 rgba(0, 0, 0, 0.8);
+    }
   .map {
     padding: 0px;
     margin: 0px;
@@ -260,7 +255,7 @@ body{
     margin-left: 30%
   }
   .map1{
-    background: url('./car.jpg');
+    background: url('../images/car.jpg');
     background-size: cover;
     width:100%;
     height:20vh;
@@ -272,7 +267,6 @@ body{
       background: #486F91;
       color:white;
       font-weight: bold;
-      
   }
   .map #dst{
     background: #3adf5e
@@ -299,9 +293,9 @@ body{
   }
   div form{
     margin-top:10%;
-    height: 90%; 
+    height: 90%;
     margin-left: 10px
-    
+
   }
   .grid input[type="datetime-local"]{
     margin-top: 30px;
@@ -309,24 +303,24 @@ body{
   }
   .grid input[type="submit"]{
     padding:10px;
-    background:#3adf5e;
+    background: #544d85;
     border-radius: 2px;
     border: none;
     float: right;
     margin-right: 20px;
-    margin-top: -10px;
+    margin-bottom: 30px;
     cursor: pointer;
-    font-family: cursive;
-    font-size: 18px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color:white
+    color:white;
   }
   .grid input[type="submit"]:hover{
-    background: #91d39f
+    background: #766eac;
   }
 }
 @media screen and (min-width:501px) and (max-width:800px) {
-  
+
   .show-menu,.hide-menu{
     display: block;
   }
@@ -358,16 +352,15 @@ body{
     font-family: sans-serif;
   }
   .city {
-    margin:0;
+    margin-top:500px;
     width:100%;
     height:24vh;
-    background: url("city.png");
+    background: url("../images/city.png");
   }
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
-    background:#fff;
     margin-left: 5%;
     margin-top: 30px;
     height: 450px;
@@ -375,20 +368,18 @@ body{
     width: 90%;
     border-radius: 10px;
     box-shadow : 3px  #fff;
-    overflow-y: auto;
-    overflow-x: auto;
   }
   .grid div{
     margin: 5px 10px;
     width: 100%;
-    height: 40vh;
+    height: 90%;
     background-color: bisque;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 2px 5px 2px 3px rgb(206, 205, 205);
+    border: none;
+    box-shadow : 0 4px 8px 0  rgba(0, 0, 0, 0.8), 0 7px 15px 0 rgba(0, 0, 0, 0.8);
+    
   }
   .map1{
-    background: url('./car.jpg');
+    background: url('../images/car.jpg');
     background-size: cover;
     width:100%;
     height:200px;
@@ -407,7 +398,7 @@ body{
       background: #486F91;
       color:white;
       font-weight: bold;
-      
+
   }
   .map #dst{
     background: #3adf5e
@@ -433,28 +424,28 @@ body{
   }
   div form{
     margin-top:10%;
-    height: 90%; 
+    height: 90%;
     margin-left: 10px
-    
+
   }
   .grid input[type="datetime-local"]{
     margin-top: 30px;
   }
   .grid input[type="submit"]{
     padding:10px;
-    background: #3adf5e;
+    background: #544d85;
     border-radius: 2px;
     border: none;
     float: right;
     margin-right: 20px;
-    margin-top: -10px;
+    margin-bottom: 30px;
     cursor: pointer;
-    font-family: cursive;
-    font-size: 18px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color:white
+    color:white;
   }
   .grid input[type="submit"]:hover{
-    background: #91d39f
+    background: #766eac;
   }
 }
