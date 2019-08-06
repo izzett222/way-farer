@@ -4,6 +4,7 @@
 	<title>sign-in</title>
 	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="../css/signin.css">
+	<script src="../js/login.js"></script>
 </head>
 <body>
 	<div class="login">
@@ -26,22 +27,5 @@
 			
 		</form>
 	</div>
-	<script>
-	function myf(form) {
-	// body...
-	// const name = getElementById('name').value;
-	// const pass = getElementById('pass').value;
-	if(form.username.value == "kabundege" && form.password.value == "123"){
-		window.open('./adminHome.html');
-	}
-	if(form.username.value == "guest" && form.password.value == "123"){
-		window.open('./usertrips.html')
-	}
-
-	else{
-		alert('access denied')
-	}
-	}
-	</script>
 <body>
 </html>
