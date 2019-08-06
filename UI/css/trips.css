@@ -82,6 +82,10 @@ body{
   visibility: hidden;
   z-index: -111;
 }
+.header h2 a{
+  text-decoration: none;
+  color: white;
+}
 @media screen and (min-width:801px) {
   .ftr{
     padding-top: 10px;
@@ -175,6 +179,7 @@ body{
     border: none;
     float: right;
     margin-right: 20px;
+    margin-top: -20px;
     cursor: pointer;
     font-family: cursive;
     font-size: 18px;

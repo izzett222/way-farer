@@ -20,6 +20,10 @@ body{
   float: right;
   line-height: 100px;
 }
+.header h2 a{
+  text-decoration: none;
+  color: white;
+}
 .img2 {
   float: right;
   line-height: 100px;

@@ -20,6 +20,10 @@ body{
   float: right;
   line-height: 100px;
 }
+.header h2 a{
+  text-decoration: none;
+  color: white;
+}
 .img2 {
   float: right;
   line-height: 100px;
@@ -214,16 +218,16 @@ form p{
     opacity: 1;
   }
   .book1{
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpKj5sdzF9gPaQ4ID-aL2b7lv4dm1RibyWAqZRluMOY7RCg4V");
+    background: url("../images/volcanoes.jpg");
     background-size: cover;
     opacity: 0.8s;
   }
   .book2{
-    background:url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1557335962%2Frwanda-zebras-akagera-national-park-RWANDANP0519.jpg%3Fitok%3DI3YpuJGt&amp;w=400&amp;c=sc&amp;poi=face&amp;q=85");
+    background:url("../images//akg.jpg");
     background-size: cover;
   }
   .book3{
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3dCGyvW4D_MUI-TieSWEfb1zQTe-xwib10i_vPAjCQXpaoeP3lA");
+    background: url("../images/hotel.jpg");
     background-size: cover;
   }
   .ftr{
@@ -412,16 +416,16 @@ form p{
     opacity: 1;
   }
   .book1{
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpKj5sdzF9gPaQ4ID-aL2b7lv4dm1RibyWAqZRluMOY7RCg4V");
+    background: url("../images/volcanoes.jpg");
     background-size: cover;
     opacity: 0.8s;
   }
   .book2{
-    background:url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1557335962%2Frwanda-zebras-akagera-national-park-RWANDANP0519.jpg%3Fitok%3DI3YpuJGt&amp;w=400&amp;c=sc&amp;poi=face&amp;q=85");
+    background:url("../images/akg.jpg");
     background-size: cover;
   }
   .book3{
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3dCGyvW4D_MUI-TieSWEfb1zQTe-xwib10i_vPAjCQXpaoeP3lA");
+    background: url("../images/hotel.jpg");
     background-size: cover;
   }
 }
@@ -465,16 +469,16 @@ form p{
     opacity: 1;
   }
   .book1{
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpKj5sdzF9gPaQ4ID-aL2b7lv4dm1RibyWAqZRluMOY7RCg4V");
+    background: url("../images/volcanoes.jpg");
     background-size: cover;
     opacity: 0.8s;
   }
   .book2{
-    background:url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1557335962%2Frwanda-zebras-akagera-national-park-RWANDANP0519.jpg%3Fitok%3DI3YpuJGt&amp;w=400&amp;c=sc&amp;poi=face&amp;q=85");
+    background:url("../images/akg.jpg");
     background-size: cover;
   }
   .book3{
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3dCGyvW4D_MUI-TieSWEfb1zQTe-xwib10i_vPAjCQXpaoeP3lA");
+    background: url("../images/hotel.jpg");
     background-size: cover;
   }
   .show-menu,.hide-menu{

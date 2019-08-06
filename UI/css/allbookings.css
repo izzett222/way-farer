@@ -4,6 +4,10 @@ body{
   font-family: "montserrat",sans-serif;
   background: lightgray;
 }
+.header h2 a{
+  text-decoration: none;
+  color: white;
+}
 .header{
   height: 100px;
   background: #486F91;
@@ -124,7 +128,7 @@ body{
   .grid div{
     margin: 5px 10px;
     width: 95%;
-    height: 40vh;
+    height: 42vh;
     background-color: bisque;
     border: none;
     box-shadow : 0 4px 8px 0  rgba(0, 0, 0, 0.8), 0 6px 15px 0 rgba(0, 0, 0, 0.8);
@@ -143,7 +147,7 @@ body{
       background: #486F91;
       color:white;
       font-weight: bold;
-      
+
   }
   .map #dst{
     background: #3adf5e
@@ -166,9 +170,9 @@ body{
   }
   div form{
     margin-top:10%;
-    height: 90%; 
+    height: 90%;
     margin-left: 10px
-    
+
   }
   .grid input[type="datetime-local"]{
     margin-top: 30px;
@@ -183,7 +187,7 @@ body{
   }
 }
 @media screen and (max-width:500px) {
-  
+
   .ftr{
     padding-top: 10px;
     background-color: #1173c7;
@@ -240,7 +244,7 @@ body{
     background-color: bisque;
     border: none;
     box-shadow : 0 4px 8px 0  rgba(0, 0, 0, 0.8), 0 6px 15px 0 rgba(0, 0, 0, 0.8);
-  
+
     }
   .map {
     padding: 0px;
@@ -256,7 +260,7 @@ body{
       background: #486F91;
       color:white;
       font-weight: bold;
-      
+
   }
   .map #dst{
     background: #3adf5e
@@ -282,9 +286,9 @@ body{
   }
   div form{
     margin-top:10%;
-    height: 90%; 
+    height: 90%;
     margin-left: 10px
-    
+
   }
   .grid input[type="datetime-local"]{
     margin-top: 30px;
@@ -300,7 +304,7 @@ body{
   }
 }
 @media screen and (min-width:501px) and (max-width:800px) {
-  
+
   .show-menu,.hide-menu{
     display: block;
   }
@@ -372,7 +376,7 @@ body{
       background: #486F91;
       color:white;
       font-weight: bold;
-      
+
   }
   .map #dst{
     background: #3adf5e
@@ -398,9 +402,9 @@ body{
   }
   div form{
     margin-top:10%;
-    height: 90%; 
+    height: 90%;
     margin-left: 10px
-    
+
   }
   .grid input[type="datetime-local"]{
     margin-top: 30px;

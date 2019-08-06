@@ -10,6 +10,11 @@ body{
   padding: 0 20px;
   color:#fff;
 }
+.header a{
+  text-decoration: none;
+  color:white;
+  font-size: 30px;
+}
 .logo{
   line-height: 100px;
   float: left;
@@ -22,39 +27,16 @@ body{
 }
 .img2 {
   float: right;
-  line-height: 100px;
+  line-height: 50px;
+  text-decoration: none;
   padding: 20px 10px 10px 10px;
 }
-.img2 #first{
-  width:20px;
-  height: 20px;
-  padding: 25px 10px 10px 0px;
-}
-.img2 ul{
-  list-style: none;
-}
-.img2 ul li{
-  background-color: rgba(0,0,0,0.2);
-  text-align: center;
-  padding:0px;
-  line-height: 20px;
-  border-radius: 40px;
-}
-.img2 ul li a{
+.img2 a{
   text-decoration: none;
+  font-size: 20px;
+  color: white;
   text-transform: uppercase;
-  color:#fff;
-  display: block;
-}
-.img2 ul li a:hover{
-  background: rgba(255, 255, 255, 0.5);
-}
-.img2 ul li ul li{
-  padding: 10px;
-  display: none;
-}
-.img2 ul li:hover ul li{
-  display:block;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
 .menu a{
   color:#fff;
@@ -86,14 +68,20 @@ body{
   margin-top: 10px;
   width: 100%;
   height: 500px;
-  background:url("https://images.wallpaperscraft.com/image/road_marking_turn_trees_115266_1920x1080.jpg");
+  background:url("../images/travel.jpg");
   background-size: cover;
+}
+.img2 a:hover{
+  background: white;
+  color:#1173c7;
+  padding: 15px;
+  transition: 0.5s;
 }
 @media screen and (min-width:801px) {
   .container{
     width: 80%;
-    height: 45vh;
-    background: rgba(255,255,255);
+    height: 57vh;
+    background: rgba(255,255,255,0.4);
     top:65%;
     left: 10%;
     transition: translate(-50%,-70%);
@@ -158,17 +146,23 @@ body{
     border-radius: 0.25em;
     text-transform: uppercase;
   }
+  .date-D p{
+    margin-top:50px;
+
+  }
   #date,#number{
     font-size: 15px;
-    margin-top: 8px;
+    margin-top: 0%;
     margin-left:43%;
     background: rgb(92, 92, 92);
-    height: 4vh;
+    height: 5vh;
     border: none;
     border-radius: 3px;
     color: white;
   }
   #number{
+    text-align: center;
+    margin-top:0px;
     margin-left: 46%;
     width:80px;
   }
@@ -177,9 +171,8 @@ body{
    border-radius: 50px;
    background:#2c3e50;
    height: 5vh;
-   width:20%;
-   margin-left: 40%;
-   margin-top: 5%;
+   width:15%;
+   margin-left: 42%;
    color: #fff;
    font-size:20px;
    font-family: cursive;
@@ -263,7 +256,7 @@ body{
     margin-top: 10px;
     width: 100%;
     height: 300px;
-    background:url("https://images.wallpaperscraft.com/image/road_marking_turn_trees_115266_1920x1080.jpg");
+    background:url("../images/travel.jpg");
     background-size: cover;
   }
   .show-menu,.hide-menu{
@@ -373,7 +366,7 @@ body{
     margin-top: 10px;
     width: 100%;
     height: 300px;
-    background:url("https://images.wallpaperscraft.com/image/road_marking_turn_trees_115266_1920x1080.jpg");
+    background:url("../images/travel.jpg");
     background-size: cover;
   }
   .show-menu,.hide-menu{
