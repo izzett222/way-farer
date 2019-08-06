@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="./UI/css/userhome.css">
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="logo"><a href="#">wayfarer</a></h2>
+      <div class="img2">
+        <h3><a href="./UI/html/signin.html">Login</a></h3>
+      </div>
+        </div>
+    <div class="img1">
+    </div>
+     <div class="container">
+        <h5>Book a Trip</h5>
+        <div class="info">
+          <div class="slt-from">
+            <p><b>From</b></p>
+            <img src="https://img.icons8.com/ios/50/000000/bus.png"width="20" height="25">
+            <select class="slt-1" name="slt-1">
+              <option selected disabled hidden>Your Origin</option>
+              <option value="1">Rubavu</option>
+              <option value="2">Huye</option>
+              <option value="3">Kigali</option>
+              <option value="4">Rwamagana</option>
+              <option value="5">Rusizi</option>
+            </select>
+          </div>
+          <div class="slt-to">
+            <p><b>To</b></p>
+            <img src="https://img.icons8.com/ios/50/000000/point-objects.png"width="20" height="25">
+            <select class="slt-2" name="slt-2">
+              <option selected disabled hidden>Your Destination</option>
+              <option value="1">Rubavu</option>
+              <option value="2">Huye</option>
+              <option value="3">Kigali</option>
+              <option value="4">Rwamagana</option>
+              <option value="5">Rusizi</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="date-D">
+          <p>Date of Departure</p>
+          <input type="date" id="date">
+          <p>Your Seat</p>
+          <input type="number" min="1" max="70" id="number" placeholder="seat">
+        </div>
+        <br></br>
+        <input type="submit" name="submit" value="Book" onclick="myf()">
+      </div>
+    </div>
+    <script>
+      function myf(){
+        window.open('./UI/html/signin.html');
+      }
+    </script>
+    <div class="city">
+    </div>
+    <div class="ftr">
+      <p>© 2019 wayfarer, Inc</p>
+    </div>
+  </body>
+</html>
