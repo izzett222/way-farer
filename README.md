@@ -52,9 +52,9 @@ WayFarer is a public bus transportation booking service.
     - npm  test
 
 ## **API endpoints**
-`- POST api/v1/auth/signin - User Signin` 
+`- POST api/v1/auth/signin - User Signin`
 
-`- POST api/v1/auth/signup - User to create an account` 
+`- POST api/v1/auth/signup - User to create an account`
 
 `- POST api/v1/trips - Create a trip`
 
@@ -76,7 +76,7 @@ WayFarer is a public bus transportation booking service.
 
 ## **UI Files**
 
-[https://amkayondo.github.io/Way-Farer/UI/](https://kabundege.github.io/Way-Farer/UI/)
+[https://kabundege.github.io/Way-Farer/UI/](https://kabundege.github.io/Way-Farer/UI/)
 
 ## **API DICUMENTATON**
 
@@ -85,4 +85,3 @@ WayFarer is a public bus transportation booking service.
 # **Author**
 
 ## **Kabundege Kwizera Christophe**
-
