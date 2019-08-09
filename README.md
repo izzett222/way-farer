@@ -76,7 +76,7 @@ WayFarer is a public bus transportation booking service.
 
 ## **UI Files**
 
-[https://kabundege.github.io/Way-Farer/UI/](https://kabundege.github.io/Way-Farer/UI/)
+[https://kabundege.github.io/Way-Farer/UI/](https://kabundege.github.io/Way-Farer/)
 
 ## **API DICUMENTATON**
 
