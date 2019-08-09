@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 
 const login =  async(req,res)=>{
     
-        const user = users.find(c => c.email === req.body.email)
+        const user = users.find(userof => userof.email === req.body.email)
         
         if(!user){
             return res.status(403).json({

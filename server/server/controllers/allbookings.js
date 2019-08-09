@@ -9,7 +9,7 @@ const allbookings = async(req,res)=>{
             data:bookings
         }) 
     }else{
-        const book = bookings.filter(c=>c.user_id === req.user.id)
+        const book = bookings.filter(booking=>booking.user_id === req.user.id)
         if(!book){
             return res.status(404).json({
                 status:404,

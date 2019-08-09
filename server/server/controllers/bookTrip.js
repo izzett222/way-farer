@@ -9,7 +9,7 @@ const bookAtrip  = async(req,res)=>{
             error : "You are an admin and not allowed to book a trip"
         })
     }
-    const trip= trips.find(c=>c.trip_id === req.body.trip_id)
+    const trip= trips.find(tripof=>tripof.trip_id === req.body.trip_id)
     if(!trip){
         return res.status(404).json({
             status:404,

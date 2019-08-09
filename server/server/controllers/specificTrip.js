@@ -7,7 +7,7 @@ const specifictrip = async(req,res)=>{
             error:"Please check the ID You enter it must be a valid"
         })
     }
-    const trip = trips.find(c=>c.trip_id === parseInt(req.params.id))
+    const trip = trips.find(tripof => tripof.trip_id === parseInt(req.params.id))
     if(!trip){
         return res.status(404).json({
             status:404,

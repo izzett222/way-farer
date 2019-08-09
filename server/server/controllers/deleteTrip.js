@@ -14,7 +14,7 @@ const deletetrip =  async(req,res)=>{
             error : "your are not an admin"
         })
     }
-        const trip = trips.find(c=>c.trip_id === parseInt(req.params.id));
+        const trip = trips.find(tripof=>tripof.trip_id === parseInt(req.params.id));
         if(!trip){
             return res.status(404).json({
                 status:404,

@@ -4,7 +4,7 @@ import users from '../models/Users';
 
 
 const signup = async(req,res)=>{
-    let user = users.find(c=> c.email === req.body.email)
+    let user = users.find(userof => userof.email === req.body.email)
         if (user){
             return res.status(409).json({
             status: 409,

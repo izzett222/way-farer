@@ -7,14 +7,14 @@ const deletebooking = async(req,res)=>{
             error:"Please check the ID You enter it must be a valid"
         })
     }
-    const mybookings = bookings.filter(c=>c.user_id === req.user.id)
+    const mybookings = bookings.filter(booking=>booking.user_id === req.user.id)
     if(!mybookings){
         return res.status(404).json({
             status:404,
             error:'No booking found'
         });
     }else{
-        const trip = mybookings.find(c=>c.booking_id === parseInt(req.params.id))
+        const trip = mybookings.find(booking=>booking.booking_id === parseInt(req.params.id))
         if(!trip){
             return res.status(404).json({
                 status: 404,

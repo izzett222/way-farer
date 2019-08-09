@@ -7,8 +7,8 @@ const createTrip =  async(req,res)=>{
             error : "your are not an admin"
         })
     }
-        const org = trips.find(c => c.origin === req.body.origin)  
-        const dst = trips.find(c=>c.destination === req.body.destination)   
+        const org = trips.find(tripof => tripof.origin === req.body.origin)  
+        const dst = trips.find(tripof => tripof.destination === req.body.destination)   
         if(dst&&org){
             return res.status(409).json({
                 status:409,
